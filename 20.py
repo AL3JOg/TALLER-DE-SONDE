@@ -6,7 +6,7 @@ b = ((1, 2),
 
 
 def producto(a, b):
-    producto = []     
+    producto = []    
     for i in range(len(b)):
         fila = []
         for j in range(len(a[0])):
