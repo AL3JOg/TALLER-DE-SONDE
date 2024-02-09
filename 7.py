@@ -1,11 +1,14 @@
-CantidadPanes=int(input("Ingresa la cantidad de panes vendidos que no son del dia: "))
-PrecioPan=3.49
-PrecioTotal=CantidadPanes*PrecioPan
-PanNoFresco=(60/100)*PrecioTotal
-i=1
-while CantidadPanes>i:
-
-    print("El precio habitual de la barra de pan es de: ",PrecioPan)
-    print("Precio con descuento del 60%: ",PanNoFresco)
-    i+=1
+# Hacer un programa que le pida al usuario números enteros hasta que escriba la
+# palabra salir al final se debe mostrar cada número con su cuadrado (es decir el
+# resultado de el número elevado a la 2)
+exit="salir"
+while True:
+    num=input("Ingresa un entero ")
     
+    if (str(num)==exit):
+        False
+        print("saliendo...")
+        break
+    op=(int(num)**2)
+    print(op)
+

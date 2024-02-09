@@ -1,25 +1,22 @@
-Vegepimiento,Vegetofu ="pimiento", "tofu"
-NoPeperoni,NoJamon,Nosalmon="peperoni", "jamon","salmon"
-A="si"
-B="no"
-cliente=input("Quiere pizza vegetariana? ")
+# Escribir un programa que pida el ingreso de temperaturas y se vayan agregando a
+# una lista hasta que escriba la palabra salir, al final se debe mostrar el promedio de
+# los valores ingresados por el usuario.
+temp=[]
+exit="salir"
+suma=0
+
+while True:
+    temperaturas=input("Temperatura: ") 
+    if temperaturas==exit:
+        False
+        print("que frio, adios")
+        break
+    pr=int(temperaturas)    
+    temp.append(pr)
+for i in range(0,len(temp)):
+    suma=temp[i]+suma
+prom=(suma/len(temp))
+print("El promedio de los datos es:",prom)
 
 
-if cliente==A:
-    print("Si quiere ")
-    Vege=input("que ingrediente deseas para tu pizza? pimiento o tofu ")
-    if Vege==Vegepimiento:
-        print("pizza vegetariana con Pimiento, mozzarella y tomate")
-    else:
-        print("pizza vegetariana con Tofu, mozzarella y tomate")
-            
-else: 
-    print("NO quiere pizza vegetariana")
-    NoVege=input("que ingrediente deseas para tu pizza? peperoni, jamon o salmon ")
-    if NoVege==NoPeperoni:
-        print("pizza normal con peperoni, mozzarella y tomate ")
-    elif NoVege==NoJamon:
-        print("pizza normal con jamon, mozzarella y tomate ")
-    else:
-        print("pizza normal con salmon, mozzarella y tomate")
-
+    

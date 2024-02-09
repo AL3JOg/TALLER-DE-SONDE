@@ -1,14 +1,9 @@
-CantidadCajas=int(input("Ingresa la cantidad de cajas: "))
-PesoPayasos=112
-PesoMuñeca=76
-i=1
-while CantidadCajas>=i:
-    print("caja # ",i)
-    CantidadPayasos=int(input("Ingresa la cantidad de payasos: "))
-    CantidadMuñeca=int(input("Ingresa la cantidad de Muñecas: "))
-    PesoTotal=(CantidadPayasos*PesoPayasos)+(CantidadMuñeca*PesoMuñeca)
+# Escribir un programa que pida al usuario una palabra y muestre por pantalla si es un
+# palíndromo.
 
-    print("el peso total de la caja ",i," es de: ",PesoTotal,"kg")
-    i+=1
-
-
+lista=list(input("ingresa palindromo: "))
+if lista==lista.reverse():
+    print("no es un palindromo")
+else:
+    print("ESte es palindromo")
+print(lista)

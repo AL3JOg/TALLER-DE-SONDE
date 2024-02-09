@@ -1,12 +1,9 @@
-v1=[]
-v2=[]
+#  Hacer un programa que contenga la siguiente lista: [1,2,3,4,5,6,7,8,9,10] pedir al
+# usuario que ingrese un elemento que desea agregar y luego ingrese la posición en
+# que desea agregarlo, finalmente debe mostrar la lista con el elemento agregado.
+lista= [1,2,3,4,5,6,7,8,9,10]
+clear=int(input("Ingresa pocision: "))
+number=int(input("Ingresa numero a agregar: "))
 
-for i in range(3):
-    nume1=int(input("Ingrese numero. Vector#1: "))
-    v1.append(nume1)
-for i in range(3):
-    nume2=int(input("Ingrese numero. Vector#2: "))
-    v2.append(nume2)
-    
-print(v1)
-print(v2)
+lista.insert(clear,number)
+print(lista)
